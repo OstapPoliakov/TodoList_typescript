@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { AddTodoForm } from "./AddTodoForm";
 import { TodoList } from "./TodoList";
-import { TodoListItem } from "./TodoListItem";
-
 
 const initialTodos: Todo[] = [
   {
@@ -38,7 +36,6 @@ function App() {
 
   return (
     <>
-      <h1>Redux To-Do List App</h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
       <AddTodoForm addTodo={addTodo} />
     </>
